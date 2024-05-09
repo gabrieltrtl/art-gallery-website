@@ -66,7 +66,7 @@ body {
     grid-template-rows: 190px auto auto auto;
     grid-template-columns: 165px 285px 475px 60px 1fr;
     background-image: linear-gradient(to right, #151515 50%, #FFFFFF 10%);
-    margin: initial;
+    margin: 0 auto;
   }
 }
 
