@@ -1,0 +1,48 @@
+// Colors
+$color1: #FFFFFF;
+$color2: #444444;
+$color3: #151515;
+$color4: #D5966C;
+
+
+//Typography
+$fonts: (
+  "$small1": 18px,
+  "$small2": 20px,
+  "$small3": 22px,
+  "$medium1": 32px,
+  "$large1": 50px,
+  "$large2": 60px,
+  "$large3": 70px,
+  "$large4": 96px,
+  );
+  
+  // Media Query
+  @mixin device($device) {
+  @if $device == tablet {
+    @media (min-width: 43.75rem) {
+      @content;
+    }
+  }  
+  @else if $device == desktop {
+    @media (min-width: 75rem) {
+      @content;
+    }
+  }
+}
+
+// Functions
+$base-font: 16px;
+
+@function px-to-rem($px) {
+  @return $px / $base-font + rem;
+}
+
+// Utility Classes
+.font-1 {
+  font-family: "Big Shoulders Display", sans-serif;
+}
+
+.font-2 {
+  font-family: "Outfit", sans-serif;
+}

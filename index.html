@@ -3,20 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
   <title>Frontend Mentor | Art gallery website</title>
 </head>
 <body>
 
-  Modern Art Gallery
-
-  The arts in the collection of the Modern Art Gallery all started 
-  from a spark of inspiration. Will these pieces inspire you? Visit 
-  us and find out.
-
-  Our location
+  <section class="intro">
+    <picture class="intro__img-wrapper">
+      <source media="(min-width: 1200px)" srcset="/assets/desktop/image-hero.jpg"">
+      <source media="(min-width: 700px)" srcset="/assets/tablet/image-hero.jpg"">
+      <img class="intro__img" src="./assets/mobile/image-hero.jpg" alt="">
+    </picture>
+    <!-- <div class="intro__content"> -->
+      <h1 class="intro__title font-1">Modern Art Gallery</h1>
+        <p class="intro__text font-2">
+          The arts in the collection of the Modern Art Gallery all started
+          from a spark of inspiration. Will these pieces inspire you? Visit
+          us and find out.
+        </p>
+        <a class="intro__link font-1" href="location.html">Our Location</a>
+    <!-- </div> -->
+  </section>
 
   Your day at the gallery
 
