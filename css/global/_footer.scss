@@ -59,7 +59,26 @@
   gap: 20px;
 }
 
+path {
+  fill: $color1;
+}
+
+path:hover {
+  fill: $color4;
+  cursor: pointer;
+}
+
 #location .footer-bg {
   background-color: $color4;
   color: $color3;
 }
+
+#location path {
+  fill: $color3;
+}
+
+#location path:hover {
+  fill: $color1;
+  cursor: pointer;
+}
+

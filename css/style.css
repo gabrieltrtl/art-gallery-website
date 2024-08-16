@@ -115,9 +115,27 @@ body {
   gap: 20px;
 }
 
+path {
+  fill: #FFFFFF;
+}
+
+path:hover {
+  fill: #D5966C;
+  cursor: pointer;
+}
+
 #location .footer-bg {
   background-color: #D5966C;
   color: #151515;
+}
+
+#location path {
+  fill: #151515;
+}
+
+#location path:hover {
+  fill: #FFFFFF;
+  cursor: pointer;
 }
 
 .intro {
@@ -460,7 +478,7 @@ body {
 .location-bg {
   background-color: #151515;
 }
-@media (min-width: 75rem) {
+@media (min-width: 43.75rem) {
   .location-bg {
     display: flex;
     align-items: center;
@@ -479,6 +497,13 @@ body {
     padding: 88px 40px 80px 39px;
   }
 }
+@media (min-width: 75rem) {
+  .location {
+    padding: 104px 0 126px 0;
+    gap: 220px;
+  }
+}
+
 .location__title {
   font-size: 40px;
   text-transform: uppercase;
@@ -489,12 +514,24 @@ body {
     font-size: 50px;
   }
 }
+@media (min-width: 75rem) {
+  .location__title {
+    font-size: 70px;
+    max-width: 10ch;
+  }
+}
 
 .location__street {
   color: #D5966C;
   font-size: 32px;
   text-transform: uppercase;
   margin-bottom: 20px;
+}
+@media (min-width: 75rem) {
+  .location__street {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
 }
 
 .location__address,
@@ -503,13 +540,29 @@ body {
   font-size: 18px;
   font-weight: 300;
 }
+@media (min-width: 75rem) {
+  .location__address,
+  .location__text {
+    font-size: 22px;
+  }
+}
 
 .location__address {
   margin-bottom: 20px;
+}
+@media (min-width: 75rem) {
+  .location__address {
+    margin-bottom: 32px;
+  }
 }
 
 @media (min-width: 43.75rem) {
   .location__text {
     max-width: 398px;
+  }
+}
+@media (min-width: 75rem) {
+  .location__text {
+    max-width: 540px;
   }
 }/*# sourceMappingURL=style.css.map */

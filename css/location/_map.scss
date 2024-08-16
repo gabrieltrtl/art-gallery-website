@@ -37,7 +37,7 @@
 
 .location-bg {
   background-color: $color3;
-  @include device(desktop) {
+  @include device(tablet) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,7 +53,8 @@
     padding: 88px 40px 80px 39px;
   }
   @include device(desktop) {
-    
+    padding: 104px 0 126px 0;
+    gap: 220px;
   }
 }
 
@@ -64,6 +65,10 @@
   @include device(tablet) {
     font-size: map-get($fonts, "$large1");
   }
+  @include device(desktop) {
+    font-size: map-get($fonts, "$large3");
+    max-width: 10ch;
+  }
 }
 
 .location__street {
@@ -71,6 +76,10 @@
   font-size: map-get($fonts, "$medium1");
   text-transform: uppercase;
   margin-bottom: 20px;
+  @include device(desktop) {
+    font-size: map-get($fonts, "$medium2");
+    margin-bottom: 24px;
+  }
 }
 
 .location__address,
@@ -78,14 +87,26 @@
  line-height: 1.55;
  font-size: map-get($fonts, "$small1");
  font-weight: 300;
+ @include device(desktop) {
+  font-size: map-get($fonts, "$small3");
+ }
 }
 
 .location__address {
   margin-bottom: 20px;
+  @include device(desktop) {
+    margin-bottom: 32px;
+  }
 }
 
 .location__text {
   @include device(tablet) {
     max-width: 398px;
   }
+  @include device(desktop) {
+    max-width: 540px;
+  }
 }
+
+
+
