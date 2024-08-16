@@ -1,12 +1,12 @@
 .footer-bg {
   background: $color3;
   color: $color1;
-  padding: 48px 32px;
+  padding: 3rem 2rem;
   @include device(tablet) {
-  padding: 56px 0;
+  padding: 3.5rem 0;
   }
   @include device(desktop) {
-  padding: 80px 0;
+  padding: 5rem 0;
    
   }
 }
@@ -23,20 +23,20 @@
     justify-content: center;
   }
   @include device(desktop) {
-    max-width: 1110px;
+    max-width: 69.375rem;
     margin: 0 auto;
     justify-content: space-between;
   }
 }
 
 .footer__logo {
-  max-width: 110px;
+  max-width: 6.875rem;
   @include device(tablet) {
-    margin-right: 65px;
+    margin-right: 4.0625rem;
   }
   @include device(desktop) {
     max-width: initial;
-    margin-right: 140px;
+    margin-right: 8.75rem;
   }
 }
 
@@ -44,13 +44,13 @@
   font-weight: 300;
   line-height: 1.625;
   @include device(tablet) {
-    max-width: 281px;
-    margin-right: 133px;
+    max-width: 17.5625rem;
+    margin-right: 8.3125rem;
   }
   @include device(desktop) {
     font-size: map-get($fonts, "$small1");
-    max-width: 430px;
-    margin-right: 280px;
+    max-width: 26.875rem;
+    margin-right: 17.5rem;
   }
 }
 
