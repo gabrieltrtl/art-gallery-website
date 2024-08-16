@@ -13,13 +13,13 @@
   <link rel="stylesheet" href="/css/style.css">
   <title>Frontend Mentor | Art gallery website</title>
 </head>
-<body>
+<body">
 
   <section class="intro">
     <picture class="intro__img-wrapper">
       <source media="(min-width: 1200px)" srcset="/assets/desktop/image-hero.jpg"">
       <source media="(min-width: 700px)" srcset="/assets/tablet/image-hero.jpg"">
-      <img class="intro__img" src="./assets/mobile/image-hero.jpg" alt="">
+      <img class="intro__img" src="./assets/mobile/image-hero@2x.jpg" alt="">
     </picture>
       <h1 class="intro__title font-1">Modern Art Gallery</h1>
         <p class="intro__text font-2">
@@ -30,19 +30,52 @@
         <a class="intro__link font-1" href="location.html">Our Location</a>
   </section>
 
-  Your day at the gallery
+  <section class="gallery">
+    <picture class="gallery__img img-1">
+      <source media="(min-width: 1200px)" srcset="/assets/desktop/image-grid-1.jpg">
+      <source media="(min-width: 700px)" srcset="/assets/tablet/image-grid-1.jpg">
+      <img src="./assets/mobile/image-grid-1@2x.jpg" alt="">
+    </picture>
+    <div class="gallery__content light">
+      <h2 class="gallery__title title-1 font-1">Your day at the gallery</h2>
+      <p class="gallery__text text-1 font-2">
+        Wander through our distinct collections and find new insights about
+        our artists. Dive into the details of their creative process.
+      </p>
+    </div>
+    <picture class="gallery__img img-2">
+      <source media="(min-width: 1200px)" srcset="/assets/desktop/image-grid-2.jpg">
+      <source media="(min-width: 700px)" srcset="/assets/tablet/image-grid-2.jpg">
+      <img src="./assets/mobile/image-grid-2@2x.jpg" alt="">
+    </picture>
+    <picture class="gallery__img img-3">
+      <source media="(min-width: 1200px)" srcset="/assets/desktop/image-grid-3.jpg">
+      <source media="(min-width: 700px)" srcset="/assets/tablet/image-grid-3.jpg">
+      <img src="./assets/mobile/image-grid-3@2x.jpg" alt="">
+    </picture>
+    <div class="gallery__content dark">
+      <h2 class="gallery__title title-2 font-1">Come &amp; be inspired</h2>
+      <p class="gallery__text text-2 font-2">
+        We’re excited to welcome you to our gallery and see how our collections
+        influence you.
+      </p>
+    </div>
+  </section>
 
-  Wander through our distinct collections and find new insights about 
-  our artists. Dive into the details of their creative process.
+  <footer class="footer-bg">
+    <div class="footer">
+      <img class="footer__logo" src="./assets/logo-light.svg" alt="">
+      <p class="footer__text font-2">
+        The Modern Art Gallery is free to all visitors and open seven days a week
+        from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+      </p>
+      <div class="footer__social">
+        <img src="./assets/icon-facebook.svg" alt="">
+        <img src="./assets/icon-instagram.svg" alt="">
+        <img src="./assets/icon-twitter.svg" alt="">
+      </div>
+    </div>
+  </footer>
 
-  Come &amp; be inspired
-
-  We’re excited to welcome you to our gallery and see how our collections 
-  influence you.
-
-  Modern Art Gallery
-
-  The Modern Art Gallery is free to all visitors and open seven days a week 
-  from 8am to 9pm. Find us at 99 King Street, Newport, USA.
 </body>
 </html>

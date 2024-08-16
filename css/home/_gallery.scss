@@ -1,0 +1,118 @@
+.gallery {
+  padding: 0 16px;
+  margin: 0 auto;  
+  margin-bottom: 120px;
+  @include device(tablet) {
+    display: grid;
+    gap: 11px 0;
+    grid-template-columns: 1fr 118px 1fr;
+    grid-auto-rows: auto;
+    max-width: 690px;
+    padding: initial;
+  }
+  @include device(desktop) {
+    max-width: 1110px;
+    grid-template-columns: 1fr 190px 1fr;
+    gap: 23px 0;
+    margin-bottom: 180px;
+  }
+}
+
+.gallery__img.img-1 {
+  margin-bottom: 25px;
+  @include device(tablet) {
+    margin-bottom: initial;
+    grid-column: 2 / 4;
+    justify-self: end;
+  }
+}
+
+.gallery__img.img-2 {
+  margin-bottom: 16px;
+  @include device(tablet) {
+    grid-column: 1 / 3;
+    grid-row: 2 / 5;
+    margin-bottom: initial;
+  }
+}
+
+.gallery__img.img-3 {
+  margin-bottom: 16px;
+  @include device(tablet) {
+    justify-self: end;
+    align-self: start;
+    margin-bottom: initial;
+  }
+  @include device(desktop) {
+    align-self: center;
+  }
+}
+
+.gallery__content.light {
+  margin-bottom: 32px;
+  @include device(tablet) {
+    grid-row: 1;
+    grid-column: 1 / 2;
+    max-width: 223px;
+    margin-bottom: initial;
+    align-self: start;
+    margin-top: 36px;
+  }
+  @include device(desktop) {
+    margin-top: initial;
+    align-self: center;
+    max-width: 350px;
+  }
+}
+
+.gallery__content.dark {
+  background-color: $color3;
+  padding: 48px 24px;
+  color: $color1;
+  @include device(tablet) {
+    max-width: 280px;
+    padding: 85px 29px;
+    justify-self: end;
+    grid-row: 3 / 5;
+    max-width: 445px;
+  }
+}
+
+.gallery__title {
+  font-size: map-get($fonts, "$large1");
+  line-height: 0.9;
+  font-weight: 900;
+  text-transform: uppercase;
+  @include device(desktop) {
+    line-height: 1;
+  }
+}
+
+.gallery__title.title-1 {
+  margin-bottom: 21px;
+  @include device(tablet) {
+    margin-bottom: 24px;
+  }
+  @include device(desktop) {
+    font-size: map-get($fonts, "$large2");
+    margin-bottom: 32px;
+
+  }
+}
+
+.gallery__title.title-2 {
+  margin-bottom: 24px;
+}
+
+.gallery__text {
+  font-size: map-get($fonts, "$small1");
+  line-height: 1.5;
+  font-weight: 300;
+  @include device(desktop) {
+  font-size: map-get($fonts, "$small3");
+  line-height: 1.45;
+  }
+}
+
+
+

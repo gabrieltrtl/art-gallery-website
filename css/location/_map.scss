@@ -1,0 +1,91 @@
+.map {
+  position: relative;
+}
+
+.map__link {
+  display: inline-block;
+  color: $color1;
+  background-color: $color3;
+  position: absolute;
+  font-size: map-get($fonts, "$small2");
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 22px 32px 22px 88px;
+  top: 0;
+  left: 0;
+  &::after {
+    display: inline-block;
+    content: "";
+    background-image: url(/assets/icon-arrow-left.svg);
+    background-repeat: no-repeat;
+    background-color: $color4;
+    background-position: center;
+    position: absolute;
+    width: 56px;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+  @include device(tablet) {
+    left: 39px;
+  }
+  @include device(desktop) {
+    left: 156px;
+  }
+}
+
+.location-bg {
+  background-color: $color3;
+  @include device(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.location {
+  padding: 48px 16px 56px 16px;
+  color: $color1;
+  @include device(tablet) {
+    display: flex;
+    gap: 90px;
+    padding: 88px 40px 80px 39px;
+  }
+  @include device(desktop) {
+    
+  }
+}
+
+.location__title {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+  @include device(tablet) {
+    font-size: map-get($fonts, "$large1");
+  }
+}
+
+.location__street {
+  color: $color4;
+  font-size: map-get($fonts, "$medium1");
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.location__address,
+.location__text {
+ line-height: 1.55;
+ font-size: map-get($fonts, "$small1");
+ font-weight: 300;
+}
+
+.location__address {
+  margin-bottom: 20px;
+}
+
+.location__text {
+  @include device(tablet) {
+    max-width: 398px;
+  }
+}

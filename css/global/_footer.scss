@@ -1,0 +1,65 @@
+.footer-bg {
+  background: $color3;
+  color: $color1;
+  padding: 48px 32px;
+  @include device(tablet) {
+  padding: 56px 0;
+  }
+  @include device(desktop) {
+  padding: 80px 0;
+   
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  @include device(tablet) {
+    flex-direction: row;
+    align-items: center;
+    gap: initial;
+    align-items: start;
+    justify-content: center;
+  }
+  @include device(desktop) {
+    max-width: 1110px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+}
+
+.footer__logo {
+  max-width: 110px;
+  @include device(tablet) {
+    margin-right: 65px;
+  }
+  @include device(desktop) {
+    max-width: initial;
+    margin-right: 140px;
+  }
+}
+
+.footer__text {
+  font-weight: 300;
+  line-height: 1.625;
+  @include device(tablet) {
+    max-width: 281px;
+    margin-right: 133px;
+  }
+  @include device(desktop) {
+    font-size: map-get($fonts, "$small1");
+    max-width: 430px;
+    margin-right: 280px;
+  }
+}
+
+.footer__social {
+  display: flex;
+  gap: 20px;
+}
+
+#location .footer-bg {
+  background-color: $color4;
+  color: $color3;
+}
